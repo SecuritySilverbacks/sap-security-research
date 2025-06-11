@@ -1,7 +1,7 @@
 # OWASP CBAS - SAP Security Research
 _A curated collection of findings, PoCs, and tools for advancing SAP Security_
 
-> [!Legal Disclaimer]
+> [!Warning]
 > All PoCs and tools are provided **for educational and research purposes only**.
 > You are solely responsible for ensuring you have appropriate authorization before testing against any system.
 > **Never test on production SAP systems without proper approval.**
@@ -13,15 +13,12 @@ This repository is maintained by the [OWASP Core Business Application Security (
 Here we collect:
 
 - **Research Papers & Whitepapers**
-
 Novel attack vectors, analysis of SAP technologies, and deep-dives into misconfigurations or overlooked weaknesses.
 
 - **Proof-of-Concept Exploits (PoCs)**
-
 Demonstrative code snippets and reproducible environments for responsible testing and education.
 
 - **Detection & Hardening Tools**
-
 Scripts and techniques to aid defenders in identifying vulnerable components, misconfigurations, and implementing mitigations.
 
 All contributions are intended to **educate, empower, and protect** the global SAP ecosystem in line with OWASP’s mission.
