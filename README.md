@@ -22,15 +22,35 @@ Demonstrative code snippets and reproducible environments for responsible testin
 - **Detection & Hardening Tools**
 Scripts and techniques to aid defenders in identifying vulnerable components, misconfigurations, and implementing mitigations.
 
+- **Exploit Database Mirror (`expdb/`)**
+A git submodule pointing to a full [Exploit-DB](https://www.exploit-db.com/) mirror with supplemental third-party CVE collections. Useful for cross-referencing public PoCs during SAP vulnerability research.
+
 All contributions are intended to **educate, empower, and protect** the global SAP ecosystem in line with OWASP’s mission.
 
 ## Structure of the Repository
 ```text
 SAP-Security-Research/
-├── papers/ # Research documents and presentations
-├── CVE-20XX-XXXX/ # Proof-of-Concept exploits, test scripts and descriptive Readme to the CVE.
+├── papers/              # Research documents and presentations
+├── CVE-20XX-XXXX/       # Proof-of-Concept exploits, test scripts and descriptive Readme to the CVE.
+├── expdb/               # Git submodule — Exploit-DB mirror + external CVE sources (see expdb/README.md)
 └── README.md
 ```
+
+### Cloning with submodules
+
+The `expdb/` directory is a [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) (~GB-scale). To clone this repository with expdb included:
+
+```bash
+git clone --recurse-submodules https://github.com/SecuritySilverbacks/sap-security-research.git
+```
+
+If you already cloned without submodules:
+
+```bash
+git submodule update --init --recursive
+```
+
+Upstream: [RndU53r/expdb](https://github.com/RndU53r/expdb)
 
 ## Contribution
 
